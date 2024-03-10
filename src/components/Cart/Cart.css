@@ -1,0 +1,146 @@
+.cart-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cart-container h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cart-table {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.cart-table table {
+  width: 100%;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 12px;
+  text-align: left;
+}
+
+.cart-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.cart-table td {
+  border-top: 1px solid #ddd;
+}
+
+.cart-table img {
+  max-width: 100px;
+  height: auto;
+}
+
+.cart-table input[type="number"] {
+  width: 50px;
+  padding: 6px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+}
+
+.delete-icon {
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.Sorry {
+  margin: 20px auto;
+  font-size: 18px;
+  color: #999;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .cart-container {
+    padding: 10px;
+  }
+}
+
+/* Suggestions and Summary */
+.suggestions-and-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.suggestions,
+.summary {
+  flex: 0 0 48%;
+}
+
+.suggestions h2,
+.summary h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.suggestions-table,
+.order-summary-table {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.suggestions-table table,
+.order-summary-table table {
+  width: 100%;
+}
+
+.suggestions-table th,
+.order-summary-table th,
+.suggestions-table td,
+.order-summary-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.suggestions-table th,
+.order-summary-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.suggestions-table td,
+.order-summary-table td {
+  border-top: 1px solid #ddd;
+}
+
+.suggestions-table button,
+.order-summary-table button {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.suggestions-table button:hover,
+.order-summary-table button:hover {
+  background-color: #45a049;
+}
+
+.order-summary-table td:last-child {
+  text-align: right;
+}
+
+.order-summary-table .checkout-btn {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.order-summary-table .checkout-btn:hover {
+  background-color: #d32f2f;
+}
