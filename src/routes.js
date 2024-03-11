@@ -11,6 +11,7 @@ import BanglaFood from "./components/BanglaFood/BanglaFood";
 import Cart from "./components/Cart/Cart";
 import Login from "./components/Login/Login.jsx"
 import Home from "./components/Home/index.js";
+import Payment from "./components/Payment/Payment.jsx";
 
 const router = createBrowserRouter([
     {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
     {
         path: "Login",
         element: <Login />
+    },
+    {
+        path: "Payment",
+        element: <Payment />
     }
 ]);
 

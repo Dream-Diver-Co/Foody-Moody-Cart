@@ -4,6 +4,7 @@ import Footer from "../../container/Footer/Footer"
 import "./Cart.css";
 import { FaTrash } from "react-icons/fa";
 import { CartContext } from "../../context/rootContext";
+import { Link } from "react-router-dom";
 
 function Cart() {
   const { cart, setCart } = useContext(CartContext);
@@ -21,6 +22,17 @@ function Cart() {
       return item;
     });
     setCart(updatedCartItems);
+  };
+
+  const calculateTotalPrice = () => {
+    let totalPrice = 0;
+    cart.forEach((item) => {
+      console.log('Item:', item);
+      if (typeof item.newPrice === 'number' && typeof item.quantity === 'number' && !isNaN(item.newPrice) && !isNaN(item.quantity)) {
+        totalPrice += item.newPrice * item.quantity;
+      }
+    });
+    return totalPrice.toFixed(2);
   };
 
   return (
@@ -62,7 +74,7 @@ function Cart() {
                         <input
                           type="number"
                           value={item.quantity || 1}
-                          min="1"
+                          min={1}
                           onChange={(e) =>
                             handleQuantityChange(
                               item.id,
@@ -91,6 +103,20 @@ function Cart() {
             </table>
           </div>
         )}
+
+        {/* Order Total Table */}
+        <div className="order-total">
+          <h3>Order Total</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>Total:</td>
+                <td>${calculateTotalPrice()}</td>
+              </tr>
+            </tbody>
+          </table>
+          <Link to="/payment" className="proceed-to-pay">Proceed to Pay</Link>
+        </div>
       </div>
       <Footer />
     </>
