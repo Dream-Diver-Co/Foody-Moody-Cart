@@ -21,7 +21,7 @@ const FeatureCard = () => {
       insideTitle: "One your Favorit food",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "/menu",
+      insideLink: "/payment",
     },
     {
       OutSideTitle: "City break",
@@ -30,7 +30,7 @@ const FeatureCard = () => {
       insideTitle: "For urban lovers",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/BanglaFood",
     },
     {
       OutSideTitle: "Pizza",
@@ -39,7 +39,7 @@ const FeatureCard = () => {
       insideTitle: "One your Favorit food",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/Feature",
     },
     {
       OutSideTitle: "City break",
@@ -48,7 +48,7 @@ const FeatureCard = () => {
       insideTitle: "For urban lovers",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/shef",
     },
     {
       OutSideTitle: "City break",
@@ -57,7 +57,7 @@ const FeatureCard = () => {
       insideTitle: "For urban lovers",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/Subscription",
     },
   ];
   return (
