@@ -1,6 +1,6 @@
 import React from "react";
 import "./FilipCard.css";
-const FlipCard = () => {
+const FlipCard = (props) => {
   return (
     <section className="card-section">
       <div className="card">
@@ -14,7 +14,7 @@ const FlipCard = () => {
                   x="0px"
                   y="0px"
                   viewBox="0 0 60 60"
-                  //   style={"enable-background:new 0 0 60 60;"}
+                  // style={enable-background:"new 0 0 60 60;"}
                   className="card-front__icon"
                 >
                   <g>
@@ -41,8 +41,10 @@ const FlipCard = () => {
                   </g>
                 </svg>
 
-                <h2 className="card-front__heading">City break</h2>
-                <p className="card-front__text-price">From £29</p>
+                <h2 className="card-front__heading">{props.OutSideTitle}</h2>
+                <p className="card-front__text-price">
+                  From {props.OutSidePrice}
+                </p>
               </div>
 
               <div className="card-front__bt">
@@ -52,10 +54,10 @@ const FlipCard = () => {
               </div>
             </div>
             <div className="card-back">
-              <video className="video__container" autoplay muted loop>
+              <video className="video__container" loop autoPlay muted>
                 <source
                   className="video__media"
-                  src="https://player.vimeo.com/external/370331493.sd.mp4?s=e90dcaba73c19e0e36f03406b47bbd6992dd6c1c&profile_id=139&oauth2_token_id=57447761"
+                  src={props.video}
                   type="video/mp4"
                 />
               </video>
@@ -66,13 +68,13 @@ const FlipCard = () => {
         <div className="inside-page">
           <div className="inside-page__container">
             <h3 className="inside-page__heading inside-page__heading--city">
-              For urban lovers
+              {props.insideTitle}
             </h3>
-            <p className="inside-page__text">
-              As cities never sleep, there are always something going on, no
-              matter what time!
-            </p>
-            <a href="#" className="inside-page__btn inside-page__btn--city">
+            <p className="inside-page__text">{props.insideDescription}</p>
+            <a
+              href={props.insidelink}
+              className="inside-page__btn inside-page__btn--city"
+            >
               View deals
             </a>
           </div>
