@@ -146,3 +146,24 @@
 .card:hover .inside-page {
   box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0, 0, 0, 0.1);
 }
+
+@media screen and (max-width: 500px) {
+  .card {
+    width: 5rem;
+  }
+  .flip-card {
+    width: 10rem;
+  }
+  .inside-page {
+    width: 10rem;
+  }
+  .card:hover {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card:hover {
+    width: 19rem;
+  }
+}

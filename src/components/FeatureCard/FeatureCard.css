@@ -10,9 +10,22 @@
 /* Container to hold all cards in one place */
 .card-area {
   align-items: center;
-  display: flex;
-  flex-wrap: nowrap;
-  height: 100%;
-  justify-content: space-evenly;
-  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .main {
+    height: auto;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  .card-area {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-area {
+    grid-template-columns: 1fr;
+  }
 }
