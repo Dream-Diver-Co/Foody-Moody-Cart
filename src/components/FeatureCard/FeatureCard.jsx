@@ -12,7 +12,7 @@ const FeatureCard = () => {
       insideTitle: "For urban lovers",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/Cashback",
     },
     {
       OutSideTitle: "Pizza",
@@ -21,7 +21,7 @@ const FeatureCard = () => {
       insideTitle: "One your Favorit food",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/menu",
     },
     {
       OutSideTitle: "City break",
