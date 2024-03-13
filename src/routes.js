@@ -12,6 +12,7 @@ import Cart from "./components/Cart/Cart";
 import Login from "./components/Login/Login.jsx"
 import Home from "./components/Home/index.js";
 import Payment from "./components/Payment/Payment.jsx";
+import Cashback from "./components/Cashback/Cashback.jsx";
 
 const router = createBrowserRouter([
     {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
     {
         path: "Payment",
         element: <Payment />
+    },
+    {
+        path: "Cashback",
+        element: <Cashback />
     }
 ]);
 
