@@ -18,7 +18,8 @@ const FeatureCard = () => {
       insideTitle: "For urban lovers",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+
+      insideLink: "/Cashback",
       color: "card-front__tp--city",
       textColor: "card-front__text-view--city",
       buttonColor: "inside-page__btn--city",
@@ -31,7 +32,7 @@ const FeatureCard = () => {
       insideTitle: "One your Favorit food",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/payment",
       color: "card-front__tp--ski",
       textColor: "card-front__text-view--ski",
       buttonColor: "inside-page__btn--ski",
@@ -44,7 +45,8 @@ const FeatureCard = () => {
       insideTitle: "For urban lovers",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+
+      insideLink: "/BanglaFood",
       color: "card-front__tp--beach",
       textColor: "card-front__text-view--beach",
       buttonColor: "inside-page__btn--beach",
@@ -57,7 +59,7 @@ const FeatureCard = () => {
       insideTitle: "One your Favorit food",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/Feature",
       color: "card-front__tp--camping",
       textColor: "card-front__text-view--camping",
       buttonColor: "inside-page__btn--camping",
@@ -70,7 +72,7 @@ const FeatureCard = () => {
       insideTitle: "For urban lovers",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+      insideLink: "/shef",
       color: "card-front__tp--city",
       textColor: "card-front__text-view--city",
       buttonColor: "inside-page__btn--city",
@@ -83,7 +85,8 @@ const FeatureCard = () => {
       insideTitle: "For urban lovers",
       insideDescription:
         "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "link",
+
+      insideLink: "/Subscription",
       color: "card-front__tp--ski",
       textColor: "card-front__text-view--ski",
       buttonColor: "inside-page__btn--ski",

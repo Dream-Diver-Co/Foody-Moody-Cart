@@ -224,6 +224,25 @@
 .card-front__tp--camping {
   background: linear-gradient(to bottom, #00db93, #00b97d);
 }
+.inside-page__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #3498db;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.inside-page__btn:hover {
+  background-color: #2980b9;
+}
+
+.inside-page__btn:active {
+  background-color: #1f618d;
+}
+
 
 /* Front card's bottom section */
 .card-front__bt {

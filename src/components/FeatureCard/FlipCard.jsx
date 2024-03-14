@@ -1,5 +1,6 @@
 import React from "react";
 import "./FilipCard.css";
+import { Link } from "react-router-dom";
 const FlipCard = (props) => {
   return (
     <section className="card-section">
@@ -72,12 +73,12 @@ const FlipCard = (props) => {
               {props.insideTitle}
             </h3>
             <p className="inside-page__text">{props.insideDescription}</p>
-            <a
-              href={props.insidelink}
+            <Link
+              to={props.insidelink}
               className={`inside-page__btn ${props.buttonColor}`}
-            >
-              View deals
-            </a>
+              View
+              details
+            ></Link>
           </div>
         </div>
       </div>
