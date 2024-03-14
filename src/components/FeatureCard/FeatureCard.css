@@ -12,7 +12,8 @@
   align-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
+  grid-gap: 2rem;
+  padding: 1rem;
 }
 @media screen and (max-width: 768px) {
   .main {
@@ -21,7 +22,7 @@
     overflow: hidden;
   }
   .card-area {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 500px) {

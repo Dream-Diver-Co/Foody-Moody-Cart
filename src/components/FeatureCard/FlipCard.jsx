@@ -1,6 +1,6 @@
 import React from "react";
 import "./FilipCard.css";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 const FlipCard = (props) => {
   return (
     <section className="card-section">
@@ -8,8 +8,9 @@ const FlipCard = (props) => {
         <div className="flip-card">
           <div className="flip-card__container">
             <div className="card-front">
-              <div className="card-front__tp card-front__tp--city">
-                <svg
+              <div className={`card-front__tp  ${props.color}`}>
+                {props.icon}
+                {/* <svg
                   version="1.1"
                   id="Layer_1"
                   x="0px"
@@ -40,7 +41,7 @@ const FlipCard = (props) => {
                     <path d="M28,36L28,36c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S29.1,36,28,36z" />
                     <path d="M33.5,36L33.5,36c-1.1,0-2,0.9-2,2s0.9,2,2,2c1.1,0,2-0.9,2-2S34.6,36,33.5,36z" />
                   </g>
-                </svg>
+                </svg> */}
 
                 <h2 className="card-front__heading">{props.OutSideTitle}</h2>
                 <p className="card-front__text-price">
@@ -49,7 +50,7 @@ const FlipCard = (props) => {
               </div>
 
               <div className="card-front__bt">
-                <p className="card-front__text-view card-front__text-view--city">
+                <p className={`card-front__text-view ${props.textColor}`}>
                   View me
                 </p>
               </div>
@@ -68,15 +69,16 @@ const FlipCard = (props) => {
 
         <div className="inside-page">
           <div className="inside-page__container">
-            <h3 className="inside-page__heading inside-page__heading--city">
+            <h3 className={`inside-page__heading ${props.textColor}`}>
               {props.insideTitle}
             </h3>
             <p className="inside-page__text">{props.insideDescription}</p>
-            <Link to={props.insidelink}
-              className="inside-page__btn inside-page__btn--city"
-            >
-              View details
-            </Link>
+            <Link
+              to={props.insidelink}
+              className={`inside-page__btn ${props.buttonColor}`}
+              View
+              details
+            ></Link>
           </div>
         </div>
       </div>
