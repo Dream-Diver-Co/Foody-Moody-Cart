@@ -12,12 +12,12 @@ import video2 from "../../assets/video/food1.mp4";
 const FeatureCard = () => {
   const videos = [
     {
-      OutSideTitle: "City break",
-      OutSidePrice: "$29",
+      OutSideTitle: "200% Cashback",
+      OutSidePrice: "Feature 1",
       Video: video2,
-      insideTitle: "For urban lovers",
+      insideTitle: "For Subscribed Clients",
       insideDescription:
-        "As cities never sleep, there are always something going on, no matter what time!",
+        "We are offering 200% Cashback! 200% Euro Points on your every payment!",
 
       insideLink: "/Cashback",
       color: "card-front__tp--city",
@@ -26,13 +26,13 @@ const FeatureCard = () => {
       icon: <FaCity className="card-front__icon" />,
     },
     {
-      OutSideTitle: "Pizza",
-      OutSidePrice: "$20",
+      OutSideTitle: "Special Day Gift",
+      OutSidePrice: "Feature 2",
       Video: video2,
-      insideTitle: "One your Favorit food",
+      insideTitle: "Special Day Gift",
       insideDescription:
-        "As cities never sleep, there are always something going on, no matter what time!",
-      insideLink: "/payment",
+        "On your special day like Birthday or Anniversary, We provide a Gift",
+      insideLink: "/Gift",
       color: "card-front__tp--ski",
       textColor: "card-front__text-view--ski",
       buttonColor: "inside-page__btn--ski",

@@ -75,10 +75,10 @@ const FlipCard = (props) => {
             <p className="inside-page__text">{props.insideDescription}</p>
             <Link
               to={props.insidelink}
-              className={`inside-page__btn ${props.buttonColor}`}
+              className={`inside-page__btn ${props.buttonColor}`}>
               View
               details
-            ></Link>
+            </Link>
           </div>
         </div>
       </div>
