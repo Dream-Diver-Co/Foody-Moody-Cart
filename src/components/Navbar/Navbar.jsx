@@ -70,35 +70,40 @@ const Navbar = () => {
       <div className="app__navbar-icons">
         <div className="icon" onClick={() => setShowCartModal(!showCartModal)}>
           <div className="cart-icon">
-            <Link to="/cart">
             <FaShoppingCart color="white" fontSize={"25px"} />
-          </Link>
-
           </div>
-          <Dropdown alignRight>
-            <Dropdown.Toggle variant="success" className="cart-toggle" />
-            <Dropdown.Menu style={{ minWidth: 370 }}>
-              <span style={{ padding: 0 }}>Cart is Empty!</span>
-            </Dropdown.Menu>
-          </Dropdown>
-
           {showCartModal && (
+            <div className="cart-modal-container">
             <div className="cart-modal">
-              <ul>{}</ul>
+              <div>
+                {cart && Array.isArray(cart) && cart.length > 0 ? (
+                  cart.map((item) => (
+                    <div key={item.id} className="cart-item">
+                      <div className="cart-item-image">
+                        <img src={item.image} alt={item.title} />
+                      </div>
+                      <div className="cart-item-details">
+                        <span>{item.title}</span>
+                        <span>{item.price}</span>
+                      </div>
+                    </div>
+                  ))
+                ) : (
+                  <span className="empty-cart-message">Cart is Empty!</span>
+                )}
+              </div>
+              {/* Add the link below the cart */}
+              <div className="proceed-to-checkout">
+                <Link to="/cart">Proceed to Checkout</Link>
+              </div>
             </div>
+          </div>
           )}
         </div>
-
         <div className="icon" onClick={() => setShowCartModal(!showCartModal)}>
           <div className="cart-icon">
             {cart && Array.isArray(cart) && cart.length > 0 ? cart.length : 0}
           </div>
-
-          {showCartModal && (
-            <div className="cart-modal">
-              <ul>{/* Cart items list */}</ul>
-            </div>
-          )}
         </div>
         <div
           className="icon"
